@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊頁面</title>
+    <link rel="stylesheet" type="text/css" href="login_register.css" />
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div id="frame_01">
+        <form method="post" action="register.js">
+            <h1>註冊</h1>
+            <div id="frame_02">
+                <div class="field">
+                    <input class="text_field" id="username" type="text"/>
+                    <p  class="label" id="username_label">姓名</p>
+                </div>
+                <div class="field">
+                    <input class="text_field" id="phone" type="text"/>
+                    <p  class="label" id="phone_label">電話</p>
+                </div>
+                <div class="field">
+                    <input class="text_field" id="account" type="text"/>
+                    <p  class="label" id="account_label">帳號</p>
+                </div>
+                <div class="field">
+                    <input class="text_field" id="password" type="password"/>
+                    <image id="eye" src="icon/eye-slash.png" />
+                    <p class="label" id="password_label">密碼</p>                
+                </div>
+                <div class="field">
+                    <input class="linker" type="button" value="返回登入畫面" onclick="location.href='login.html'"/>
+                    <input class="btn" id="btn_register" type="button" value="註冊" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login_register.js"></script>
+</body>
+
+</html>
